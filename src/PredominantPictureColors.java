@@ -32,7 +32,7 @@ public class PredominantPictureColors {
             currentColor.setHue(convertedRed, convertedGreen, convertedBlue);
             currentColor.setSaturation();
 
-            //to deal with possible negative values for hue, if less than 360 add 360 to it
+            //to deal with possible negative values for hue, if less than 0 add 360 to it
             if (currentColor.hue < 0) {
                 currentColor.hue += 360;
             }
